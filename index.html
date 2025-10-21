@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Gaming Hub | Links & Portofolio</title> 
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="no-scroll"> 
+    <header>
+        <div class="logo">
+            <span class="logo-rr">RR</span> <span class="logo-subtext">WEBSITE // GAMING</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About</a></li> 
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home"> 
+        <div class="hero-text">
+            <p>SMKN 1 MAESAN</p>
+            <h1>RR GAMES LINKS CENTER</h1>
+            <h2>Situs web dan permainan yang kami buat dengan koding menggunakan bahasa pemrograman Python dalam acara pelatihan teknologi informasi dan komunikasi</h2>
+            <p class="bio-title">Ini adalah website uji coba yang kami buat menggunakan VESCODE "visual studio code"</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <div class="cta-buttons-container">
+                <button class="cta-button" onclick="unlockScrollAndGoToAbout()">More About Me</button> 
+                <button class="cta-button-secondary" onclick="unlockScrollAndGoToPortfolio()">Mainkan Game</button> 
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/AI.jpg" alt="Avatar AI"> 
+        </div>
+    </section>
+
+    <section class="about-us" id="about-us"> 
+        <div class="about-content">
+            <h2>PEMBUAT WEBSITE</h2>
+            <div class="person-bio">
+                <div class="bio-item">
+                    <img src="images/riko.jpg" alt="Foto Ricko" class="profile-pic">
+                    <h3>Ricko Septyan Ramadhan</h3>
+                    <p>Asal: Jawa timur,Bondowoso,Tenggarang</p>
+                    <p>Umur: 17 Tahun</p>
+                    <p>Status: Siswa SMKN 01 Maesan</p>
+                    <p>Riko adalah pengembang utama website ini berbasis python.</p>
+                </div>
+                <div class="bio-item">
+                    <img src="images/roizul.jpg" alt="Foto Roizul" class="profile-pic"> 
+                    <h3>Roizul Umam</h3>
+                    <p>Asal: Jawa Timur,Jember,Kalisat</p>
+                    <p>Umur: 16 Tahun</p>
+                    <p>Status: Siswa SMKN 01 Maesan</p>
+                    <p>Roizul adalah rekan saya yang bertugas di bagian CSS yaitu desain website ini</p>
+                </div>
+            </div>
+            <p class="project-info">Website ini dibuat sebagai proyek ujicoba pemograman menggunakan Python yang di kerjakan oleh kami berdua.</p>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="portfolio-game">
+        <div class="portfolio-content">
+            <h2>Wadah Link Game Gratis</h2>
+            <p>Di sini adalah kumpulan tautan menuju game-game seru yang dapat Anda mainkan langsung di browser (seperti Chrome).</p>
+            
+            <div class="game-cards-container">
+                
+                <div class="game-card">
+                    <h3>GAME ULAR TANGGA</h3>
+                    <p>Permainan klasik papan yang menantang keberuntungan Anda dengan tangga yang membawa naik dan ular yang menjatuhkan.</p>
+                    <a href="https://www.crazygames.co.id/game/snakes-and-ladders" target="_blank" class="game-link-button">
+                        Mainkan Game 
+                    </a>
+                </div>
+                
+                <div class="game-card">
+                    <h3>GAME DEADSHOT IO </h3>
+                    <p>Rasakan sensasi kecepatan tinggi dan aksi tembak-menembak dalam suatu arena dengan berbagai jenis senjata yang di sediakan</p>
+                    <a href="https://deadshot.io/" target="_blank" class="game-link-button">
+                        Mainkan Game 
+                    </a>
+                </div>
+                
+                <div class="game-card">
+                    <h3>GAME KRUNKER.IO</h3>
+                    <p>FPS retro yang cepat dan gratis! Bertarung melawan pemain lain di berbagai peta dengan senjata unik.</p>
+                    <a href="https://krunker.io/" target="_blank" class="game-link-button">
+                        Mainkan Game 
+                    </a>
+                </div>
+
+            </div>
+            
+            <p class="project-note">Semua game di atas dimainkan di luar website ini dan memerlukan koneksi internet.</p>
+        </div>
+    </section>
+    
+    <script>
+        function unlockScrollAndGoToAbout() {
+            // Aktifkan scrolling dan scroll INSTAN ke About
+            document.body.classList.remove('no-scroll');
+            const aboutSection = document.getElementById('about-us');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'instant' }); 
+            }
+        }
+        
+        function unlockScrollAndGoToPortfolio() {
+            // Aktifkan scrolling dan scroll INSTAN ke Portofolio/Game
+            document.body.classList.remove('no-scroll');
+            const portfolioSection = document.getElementById('portfolio');
+            if (portfolioSection) {
+                portfolioSection.scrollIntoView({ behavior: 'instant' }); 
+            }
+        }
+    </script>
+</body>
+</html>
